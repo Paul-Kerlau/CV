@@ -107,10 +107,9 @@ h2{color:var(--accent-2);margin:.75rem 0 .9rem;font-size:1.7rem;font-weight:500;
 
 .social-icon{
 	display:block;
-	width:48px;
+	width:24px;
 	height:auto;
 	margin-top:1rem;
-	border-radius:12px;
 	box-shadow:0 8px 18px rgba(25, 136, 86, 0.12);
 }
 
