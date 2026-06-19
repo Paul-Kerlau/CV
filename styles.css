@@ -4,12 +4,12 @@
 :root{
 	--bg-light:#f7fbff;
 	--bg-muted:#f2f6f9;
-	--card-bg:rgba(255,255,255,0.9);
-	--muted:#475662;
-	--accent:#2f86a6;
-	--accent-3:#70b875;
-	--accent-3-weak:rgba(112,184,117,0.12);
-	--accent-2:#d07b64;
+	--card-bg:rgba(255, 255, 0, 0.9);
+	--muted:#000000;
+	--accent:#060071;
+	--accent-3:#d7611d;
+	--accent-3-weak:rgba(156, 120, 88, 0.347);
+	--accent-2:#932c00;
 	--shadow-1:0 6px 18px rgba(20,30,50,0.06);
 	--shadow-2:0 18px 40px rgba(20,30,50,0.12);
 }
@@ -21,8 +21,6 @@ body{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size:16px;
 	line-height:1.75;
-	background: radial-gradient(circle at 10% 10%, rgba(47,134,166,0.04), transparent 20%),
-						linear-gradient(180deg,var(--bg-light) 0%, var(--bg-muted) 100%);
 	color:var(--muted);
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
@@ -37,7 +35,7 @@ body{
 	flex-direction:column;
 	gap:1.5rem;
 h1{margin:0;color:var(--accent);font-size:2.4rem;letter-spacing:0.5px;line-height:1.1;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
-h2{color:var(--accent-2);margin:.75rem 0 .9rem;font-size:1.7rem;font-weight:500;border-bottom:1px solid rgba(35, 83, 44, 0.15);padding-bottom:.35rem;}
+h2{color:var(--accent-2);margin:.75rem 0 .9rem;font-size:1.7rem;font-weight:500;border-bottom:1px solid rgba(83, 35, 35, 0.15);padding-bottom:.35rem;}
 }
 
 .grid{
@@ -52,7 +50,7 @@ h2{color:var(--accent-2);margin:.75rem 0 .9rem;font-size:1.7rem;font-weight:500;
 
 .card{
 	position:relative;
-	background:linear-gradient(135deg, rgba(112,184,117,0.08) 0%, rgba(255,255,255,0.94) 65%);
+	background:linear-gradient(135deg, rgba(191, 173, 222, 0.137) 0%, rgba(255,255,255,0.94) 65%);
 	border-radius:16px;
 	padding:1.25rem;
 	box-shadow:var(--shadow-1);
@@ -98,7 +96,7 @@ h2{color:var(--accent-2);margin:.75rem 0 .9rem;font-size:1.7rem;font-weight:500;
 	width:36px;
 	height:3px;
 	border-radius:999px;
-	background:rgba(112,184,117,0.65);
+	background:rgba(245, 201, 160, 0.573);
 }
 .card p{margin:0 0 1rem 0;color:var(--muted);line-height:1.75;font-size:1rem}
 .card ul, .card ol{margin:0 0 1rem 0;padding-left:1.25rem}
@@ -121,24 +119,6 @@ h2{color:var(--accent-2);margin:.75rem 0 .9rem;font-size:1.7rem;font-weight:500;
 .btn.secondary{background:var(--accent-2);box-shadow:0 6px 18px rgba(208,123,100,0.12)}
 .btn:hover{transform:translateY(-3px)}
 
-/* Langues : points colorés au milieu de la ligne */
-.langs{display:flex;flex-direction:column;gap:.6rem}
-.lang-item{display:flex;align-items:center;gap:1rem}
-.lang-name{font-weight:700;color:#1f3d2f;min-width:96px;flex:0 0 auto}
-.lang-dots{display:flex;gap:.35rem;flex:1;justify-content:flex-start;align-items:center}
-.dot{
-	width:8px;
-	height:8px;
-	border-radius:50%;
-	background:rgba(25, 209, 8, 0.9);
-}
-.dot-back{
-	width:7.5px;
-	height:7.5px;
-	border-radius:50%;
-	background:#4f7d50;
-	opacity:.95;
-}
 
 /* Listes : rapprocher les puces du texte */
 ul, ol{
